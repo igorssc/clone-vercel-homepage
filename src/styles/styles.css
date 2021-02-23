@@ -1,0 +1,20 @@
+@keyframes colorCycleDark {
+  0%,
+  55% {
+    filter: brightness(0) invert(1);
+  }
+
+  11%,
+  33% {
+    filter: none;
+  }
+}
+
+.dark-mode .dark\:invert-color-title {
+  filter: brightness(0) invert(1);
+  animation: colorCycleDark 10s ease-in-out infinite;
+}
+
+.dark-mode .dark\:invert-color-logo {
+  filter: none !important;
+}
